@@ -13,12 +13,12 @@
     <div class="wrapper">
         <h1 class="app-title">Audi light control panel</h1>
         <div class="control-panel">
-            <button class="left-indicator">left</button>
-            <button class="right-indicator">right</button>
-            <button class="low-beam-headlight">low-beam</button>
-            <button class="high-beam-headlight">high-beam</button>
-            <button class="stop-light">stop light</button>
-            <button class="emergency">emergency</button>
+            <button class="left-indicator control-button">left</button>
+            <button class="right-indicator control-button">right</button>
+            <button class="low-beam-headlight control-button">low-beam</button>
+            <button class="high-beam-headlight control-button">high-beam</button>
+            <button class="stop-light control-button">stop light</button>
+            <button class="emergency control-button">emergency</button>
         </div>
         <div class="container">
             <section class="front-view">
@@ -41,17 +41,24 @@
                 </div>
             </section>
             <section class="rear-view">
-                <img src="../src/images/Audi_rear_color.jpg" alt="Audi s1 rear view">
+                <img class="rear-view__image" src="../src/images/Audi_rear_color.jpg" alt="Audi s1 rear view">
+                <div class="rear-view__wrapper">
+                    <div class="rear-view__indicator rear_view__indicator--left indicator"></div>
+                    <div class="rear-view__indicator rear_view__indicator--right indicator"></div>
+                    <div class="rear-view__position-stop rear-view__position-stop--left position-stop"></div>
+                    <div class="rear-view__position-stop rear-view__position-stop--right position-stop"></div>
+                </div>
             </section>
             <section class="left-view">
-                <img src="../src/images/Audi_side_left_color.jpg" alt="Audi s1 left side view">
+                <img class="left-view__image" src="../src/images/Audi_side_left_color.jpg" alt="Audi s1 left side view">
             </section>
             <section class="right-view">
-                <img src="../src/images/Audi_side_right_color.jpg" alt="Audi s1 right side view">
+                <img class="right-view__image" src="../src/images/Audi_side_right_color.jpg"
+                    alt="Audi s1 right side view">
 
             </section>
             <section class="top-view">
-                <img src="../src/images/Audi_top.jpg" alt="Audi s1 top view">
+                <img class="top-view__image" src="../src/images/Audi_top.jpg" alt="Audi s1 top view">
 
             </section>
         </div>
