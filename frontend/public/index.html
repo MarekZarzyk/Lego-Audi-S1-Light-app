@@ -10,6 +10,52 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <h1 class="app-title">Audi light control panel</h1>
+        <div class="control-panel">
+            <button class="left-indicator">left</button>
+            <button class="right-indicator">right</button>
+            <button class="low-beam-headlight">low-beam</button>
+            <button class="high-beam-headlight">high-beam</button>
+            <button class="stop-light">stop light</button>
+            <button class="emergency">emergency</button>
+        </div>
+        <div class="container">
+            <section class="front-view">
+                <img class="front-view__image" src="../src/images/Audi_front_color.jpg" alt="Audi s1 front view">
+                <div class="fornt-view__wrapper">
+                    <div class="fornt-view__low-beam fornt-view__low-beam--right low-beam"></div>
+                    <div class="fornt-view__low-beam fornt-view__low-beam--left low-beam"></div>
+                    <div class="front-view__high-beam-container front-view__high-beam-container--left">
+                        <div class="front-view__high-beam front-view__high-beam--upper high-beam"></div>
+                        <div class="front-view__high-beam front-view__high-beam--lower-left high-beam"></div>
+                        <div class="front-view__high-beam front-view__high-beam--lower-right high-beam"></div>
+                    </div>
+                    <div class="front-view__high-beam-container front-view__high-beam-container--right">
+                        <div class="front-view__high-beam front-view__high-beam--upper high-beam"></div>
+                        <div class="front-view__high-beam front-view__high-beam--lower-left high-beam"></div>
+                        <div class="front-view__high-beam front-view__high-beam--lower-right high-beam"></div>
+                    </div>
+                    <div class="front-view__indicator front-view__indicator--left indicator"></div>
+                    <div class="front-view__indicator front-view__indicator--right indicator"></div>
+                </div>
+            </section>
+            <section class="rear-view">
+                <img src="../src/images/Audi_rear_color.jpg" alt="Audi s1 rear view">
+            </section>
+            <section class="left-view">
+                <img src="../src/images/Audi_side_left_color.jpg" alt="Audi s1 left side view">
+            </section>
+            <section class="right-view">
+                <img src="../src/images/Audi_side_right_color.jpg" alt="Audi s1 right side view">
+
+            </section>
+            <section class="top-view">
+                <img src="../src/images/Audi_top.jpg" alt="Audi s1 top view">
+
+            </section>
+        </div>
+    </div>
 
     <script defer src="../src/app.js"></script>
 </body>
