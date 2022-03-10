@@ -1,0 +1,18 @@
+.control-button {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid $dark-gray;
+  border-radius: 5px;
+  color: $dark-gray;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: $soft-gray;
+  }
+  &.button-on {
+    background-color: $dark-gray;
+    color: $light-gray;
+  }
+}

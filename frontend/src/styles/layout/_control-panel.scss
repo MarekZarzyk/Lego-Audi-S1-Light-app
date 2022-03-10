@@ -1,0 +1,13 @@
+.control-panel {
+  border-left: 2px solid $dark-gray;
+  border-right: 2px solid $dark-gray;
+  border-top: 2px solid $dark-gray;
+  padding: 10px;
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-top: 10px;
+  }
+}
