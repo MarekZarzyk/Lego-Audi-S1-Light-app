@@ -1,0 +1,42 @@
+.views {
+  background-color: #161616;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  & .image {
+    height: 130px;
+  }
+  & .side-view__image {
+    height: 110px;
+  }
+  & .top-view__image {
+    width: 325px;
+  }
+  & .view {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  & .low-beam {
+    background-color: $low-beam;
+  }
+  & .high-beam {
+    background-color: $high-beam;
+  }
+  & .indicator {
+    background-color: $indicator;
+  }
+  & .interior {
+    background-color: $interior;
+  }
+  & .position-stop {
+    background-color: $position-stop;
+  }
+}
