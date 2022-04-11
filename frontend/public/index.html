@@ -14,20 +14,25 @@
         <div class="control-panel">
             <h1 class="app-title">Audi light control panel</h1>
             <div class="control-panel__buttons">
-                <button class="left-indicator control-button">left</button>
-                <button class="low-beam-headlight control-button">low-beam</button>
-                <button class="high-beam-headlight control-button">high-beam</button>
-                <button class="right-indicator control-button">right</button>
-                <button class="stop-light control-button">stop light</button>
-                <button class="emergency control-button">emergency</button>
+                <button data-btn="left-ind" class="left-indicator control-button">left</button>
+                <button data-btn="right-ind" class="right-indicator control-button">right</button>
+                <button data-btn="low-beam" class="low-beam-headlight control-button">low-beam</button>
+                <button data-btn="high-beam" class="high-beam-headlight control-button">high-beam</button>
+                <!-- <button data-btn="high-beam-r" class="high-beam-headlight-right control-button">high-beam right</button> -->
+                <button data-btn="stop" class="stop-light control-button">stop light</button>
+                <button data-btn="emergency" class="emergency control-button">emergency</button>
+                <button data-btn="int" class="interior control-button">interior</button>
             </div>
         </div>
         <div class="views">
-            <section class="front-view">
-                <img class="front-view__image" src="../src/images/Audi_front_reverted.jpg" alt="Audi s1 front view">
-                <div class="fornt-view__wrapper">
-                    <div class="fornt-view__low-beam fornt-view__low-beam--right low-beam"></div>
-                    <div class="fornt-view__low-beam fornt-view__low-beam--left low-beam"></div>
+            <section class="front-view view">
+                <img class="front-view__image image" src="../src/images/Audi s1 quattro front.png"
+                    alt="Audi s1 front view">
+                <div class="front-view__wrapper lights-wrapper">
+                    <div class="front-view__low-beam-container">
+                        <div class="front-view__low-beam front-view__low-beam--right low-beam"></div>
+                        <div class="front-view__low-beam front-view__low-beam--left low-beam"></div>
+                    </div>
                     <div class="front-view__high-beam-container front-view__high-beam-container--left">
                         <div class="front-view__high-beam front-view__high-beam--upper high-beam"></div>
                         <div class="front-view__high-beam front-view__high-beam--lower-left high-beam"></div>
@@ -42,36 +47,34 @@
                     <div class="front-view__indicator front-view__indicator--right indicator"></div>
                 </div>
             </section>
-            <section class="rear-view">
-                <img class="rear-view__image" src="../src/images/Audi_rear_inverted.jpg" alt="Audi s1 rear view">
-                <div class="rear-view__wrapper">
+            <section class="rear-view view">
+                <img class="rear-view__image image" src="../src/images/Audi s1 quattro rear.png"
+                    alt="Audi s1 rear view">
+                <div class="rear-view__wrapper lights-wrapper">
                     <div class="rear-view__indicator rear_view__indicator--left indicator"></div>
                     <div class="rear-view__indicator rear_view__indicator--right indicator"></div>
                     <div class="rear-view__position-stop rear-view__position-stop--left position-stop"></div>
                     <div class="rear-view__position-stop rear-view__position-stop--right position-stop"></div>
                 </div>
             </section>
-            <section class="side-view">
-                <img class="side-view__image" src="../src/images/Audi_side_left_inverted.jpg" alt="Audi s1 side view">
-                <div class="side-view__wrapper">
+            <section class="side-view view">
+                <img class="side-view__image image" src="../src/images/Audi s1 quattro left small.png"
+                    alt="Audi s1 side view">
+                <div class="side-view__wrapper lights-wrapper">
                     <div class="side-view__indicator side-view__indicator--front indicator"></div>
                     <div class="side-view__indicator side-view__indicator--rear indicator"></div>
                     <div class="side-view__low-beam low-beam"></div>
                     <div class="side-view__high-beam-container">
                         <div class="side-view__high-beam side-view__high-beam--upper high-beam"></div>
+                        <div class="side-view__high-beam side-view__high-beam--middle high-beam"></div>
                         <div class="side-view__high-beam side-view__high-beam--lower high-beam"></div>
                     </div>
                     <div class="side-view__position-stop position-stop"></div>
                 </div>
             </section>
-            <!-- <section class="right-view">
-                <img class="right-view__image" src="../src/images/Audi_side_right_color.jpg"
-                    alt="Audi s1 right side view">
-                <div class="right-view__wrapper"></div>
-            </section> -->
-            <section class="top-view">
-                <img class="top-view__image" src="../src/images/Audi_top_inverted.jpg" alt="Audi s1 top view">
-                <div class="top-view__wrapper">
+            <section class="top-view view">
+                <img class="top-view__image image" src="../src/images/Audi s1 quattro top.png" alt="Audi s1 top view">
+                <div class="top-view__wrapper lights-wrapper">
                     <div class="top-view__indicator top-view__indicator--front-left indicator"></div>
                     <div class="top-view__indicator top-view__indicator--front-right indicator"></div>
                     <div class="top-view__indicator top-view__indicator--rear-left indicator"></div>
@@ -95,7 +98,7 @@
         </div>
     </div>
 
-    <script defer src="../src/app.js"></script>
+    <script defer type="module" src="../src/app.js"></script>
 </body>
 
 </html>

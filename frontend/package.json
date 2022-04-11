@@ -3,12 +3,14 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel ./public/index.html",
+    "start": "parcel ./public/index.pug",
     "build": "parcel build ./public/index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2",
-    "parcel-plugin-nuke-dist": "^1.0.1"
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "pug": "^3.0.2"
   }
 }
