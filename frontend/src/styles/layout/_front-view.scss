@@ -7,16 +7,19 @@
   &__low-beam {
     position: absolute;
     border-radius: 2px;
-    height: $light-dims;
-    width: $light-dims;
+    height: $light-dims/1.4;
+    width: $light-dims/1.4;
 
     &--left {
-      top: 2px;
       left: 2px;
     }
-
+    &--left,
     &--right {
       top: 2px;
+      background-image: url("images/lamp_sprite_v3.png");
+      background-position: 3px 4px;
+    }
+    &--right {
       right: 2px;
     }
 
@@ -35,26 +38,28 @@
     width: $light-dims;
     border-radius: 50%;
     z-index: 15;
+    // background-image: url("images/lamp_sprite_v3.png");
+    // background-size: 90%;
 
     &--upper {
-      top: 0.15rem;
-      left: 0.12rem;
+      top: 0;
+      left: 0;
     }
 
     &--lower-left {
-      bottom: 0.15rem;
-      left: 0.15rem;
+      bottom: 0;
+      left: 0;
     }
 
     &--lower-right {
-      top: 0.15rem;
-      right: 0.15rem;
+      top: 0;
+      right: 0;
     }
 
     &-container {
       position: absolute;
-      height: calc(($light-dims * 2) + 0.6rem);
-      width: calc(($light-dims * 2) + 0.6rem);
+      height: calc(($light-dims) + 1.2rem);
+      width: calc(($light-dims) + 1.2rem);
       transform: rotate(45deg);
       border-radius: 1px;
       z-index: 10;
@@ -73,12 +78,12 @@
 
       &--left {
         top: 4.1rem;
-        left: 2.4rem;
+        left: 2.44rem;
       }
 
       &--right {
         top: 4.1rem;
-        right: 2.5rem;
+        right: 2.44rem;
       }
     }
   }
@@ -88,7 +93,9 @@
     height: calc($light-dims / 2);
     width: $light-dims;
     top: calc(50% - ($light-dims / 2) / 2);
+    border-radius: 3px;
     z-index: 5;
+    // box-shadow: 0 0 30px 10px $low-beam, 0 0 20px 20px $indicator;
 
     &--left {
       left: 0.15rem;
@@ -110,7 +117,7 @@
   &__interior {
     position: absolute;
     left: calc(50% - ($light-dims / 2));
-    top: -$light-dims / 2;
+    top: -(calc($light-dims / 2));
     height: calc($light-dims / 2);
     width: $light-dims;
 
