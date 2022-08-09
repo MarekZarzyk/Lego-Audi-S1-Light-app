@@ -3,4 +3,11 @@
 .indicator,
 .position-stop {
   background-image: url("images/Audi_lights_sprite_19x123_small.png");
+  opacity: 0;
+}
+.interior {
+  opacity: 0;
+}
+.active {
+  opacity: 1; // klasa nadawana podczas włączenia światła ( do zrobienia w JS)
 }
