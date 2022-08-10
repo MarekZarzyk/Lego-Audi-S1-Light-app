@@ -6,14 +6,12 @@
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  overflow: hidden;
   & .image {
     height: 130px;
   }
   & .side-view__image {
     height: 110px;
-  }
-  & .top-view__image {
-    width: 325px;
   }
   & .view {
     position: relative;
@@ -22,21 +20,5 @@
     align-content: center;
     align-items: center;
     height: 180px;
-  }
-
-  & .low-beam {
-    // background-color: $low-beam;
-  }
-  & .high-beam {
-    // background-color: $high-beam;
-  }
-  & .indicator {
-    // background-color: $indicator;
-  }
-  & .interior {
-    background-color: $interior;
-  }
-  & .position-stop {
-    background-color: $position-stop;
   }
 }

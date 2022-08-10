@@ -10,14 +10,23 @@
   &__wrapper {
     position: relative;
   }
+  &__interior {
+    position: absolute;
+    left: 193px;
+    top: 14px;
+    box-shadow: 0 0 15px 4px $interior;
+    z-index: -10;
+  }
   &__position-stop {
     @include rearLampPositions();
     background-position: 64px 0px;
+    box-shadow: 1px 0 13px 3px darken($position-stop, 20);
     z-index: 5;
-    &--stop-on {
-      background-position: 56px 0px;
-      z-index: 7;
-    }
+  }
+  .stop-on {
+    background-position: 56px 0px;
+    box-shadow: 1px 0 13px 3px darken($position-stop, 5);
+    z-index: 7;
   }
   &__indicator {
     position: absolute;
@@ -26,10 +35,19 @@
       height: 5px;
       bottom: 26px;
       left: 17px;
+      box-shadow: 2px -1px 8px 5px $indicator--orange,
+        -4px -7px 8px 2px $indicator--orange,
+        1px -24px 5px -1px $indicator--orange;
+      transition: 0.1s linear;
+      z-index: 10;
     }
     &--rear {
       @include rearLampPositions();
       background-position: 60px 0px;
+      box-shadow: 1px 0px 10px 3px $indicator--orange,
+        2px 0px 4px 0px $indicator--light,
+        inset 7px 4px 26px -15px $indicator--orange;
+      transition: 0.1s linear;
       z-index: 10;
     }
   }
@@ -51,20 +69,45 @@
     top: 53px;
     left: 23px;
     background-position: 46px 0px;
-  }
-  &__high-beam-container {
-    position: absolute;
-    width: 6px;
-    height: 27px;
-    top: 52px;
-    left: 4px;
+    box-shadow: -2px 0px 8px 3px $low-beam;
+    transition: 0.1s ease-out;
+    z-index: 15;
+    &::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      box-shadow: -10px 0 9px 1px $low-beam, -17px 3px 14px 3px $low-beam,
+        -23px 4px 30px 3px $low-beam, -51px 6px 40px 2px $low-beam;
+    }
   }
   &__high-beam {
     position: absolute;
     width: 6px;
     height: 15px;
     background-position: 52px 0px;
-
+    box-shadow: -2px 0px 8px 3px $high-beam--blue;
+    transition: 0.05s ease-out;
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 15px;
+      box-shadow: -7px 0 10px 1px $high-beam--bright,
+        -16px 0 16px 3px $high-beam--bright,
+        -18px 3px 20px 4px $high-beam--bright,
+        -47px 1px 31px 3px $high-beam--bright,
+        -37px 1px 30px 3px $high-beam--bright,
+        -31px 1px 38px 7px $high-beam--blue, -46px 1px 36px 5px $high-beam--blue;
+    }
+    &-container {
+      position: absolute;
+      width: 6px;
+      height: 27px;
+      top: 52px;
+      left: 4px;
+      z-index: 5;
+    }
     &--lower {
       top: 13px;
     }
