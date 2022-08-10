@@ -1,9 +1,9 @@
 @mixin rearLampPositions {
-  position: absolute;
-  width: 4px;
-  height: 15px;
   bottom: 53px;
+  height: 15px;
+  position: absolute;
   right: 12px;
+  width: 4px;
 }
 
 .side-view {
@@ -11,10 +11,10 @@
     position: relative;
   }
   &__interior {
-    position: absolute;
-    left: 193px;
-    top: 14px;
     box-shadow: 0 0 15px 4px $interior;
+    left: 193px;
+    position: absolute;
+    top: 14px;
     z-index: -10;
   }
   &__position-stop {
@@ -31,14 +31,14 @@
   &__indicator {
     position: absolute;
     &--front {
-      width: 5px;
-      height: 5px;
       bottom: 26px;
-      left: 17px;
       box-shadow: 2px -1px 8px 5px $indicator--orange,
         -4px -7px 8px 2px $indicator--orange,
         1px -24px 5px -1px $indicator--orange;
+      height: 5px;
+      left: 17px;
       transition: 0.1s linear;
+      width: 5px;
       z-index: 10;
     }
     &--rear {
@@ -53,59 +53,59 @@
   }
 
   &__front-panel {
-    position: absolute;
     background-image: url("images/side_view_cover_panel.png");
-    width: 50px;
     height: 47px;
-    top: 56px;
     left: 0px;
+    position: absolute;
+    top: 56px;
+    width: 50px;
     z-index: 15;
   }
 
   &__low-beam {
-    position: absolute;
-    width: 6px;
-    height: 15px;
-    top: 53px;
-    left: 23px;
     background-position: 46px 0px;
     box-shadow: -2px 0px 8px 3px $low-beam;
+    height: 15px;
+    left: 23px;
+    position: absolute;
+    top: 53px;
     transition: 0.1s ease-out;
+    width: 6px;
     z-index: 15;
     &::after {
       content: "";
-      display: block;
-      width: 20px;
-      height: 20px;
       box-shadow: -10px 0 9px 1px $low-beam, -17px 3px 14px 3px $low-beam,
         -23px 4px 30px 3px $low-beam, -51px 6px 40px 2px $low-beam;
+      display: block;
+      height: 20px;
+      width: 20px;
     }
   }
   &__high-beam {
-    position: absolute;
-    width: 6px;
-    height: 15px;
     background-position: 52px 0px;
     box-shadow: -2px 0px 8px 3px $high-beam--blue;
+    height: 15px;
+    position: absolute;
     transition: 0.05s ease-out;
+    width: 6px;
     &::after {
       content: "";
-      display: block;
-      width: 10px;
-      height: 15px;
       box-shadow: -7px 0 10px 1px $high-beam--bright,
         -16px 0 16px 3px $high-beam--bright,
         -18px 3px 20px 4px $high-beam--bright,
         -47px 1px 31px 3px $high-beam--bright,
         -37px 1px 30px 3px $high-beam--bright,
         -31px 1px 38px 7px $high-beam--blue, -46px 1px 36px 5px $high-beam--blue;
+      display: block;
+      height: 15px;
+      width: 10px;
     }
     &-container {
-      position: absolute;
-      width: 6px;
       height: 27px;
-      top: 52px;
       left: 4px;
+      position: absolute;
+      top: 52px;
+      width: 6px;
       z-index: 5;
     }
     &--lower {

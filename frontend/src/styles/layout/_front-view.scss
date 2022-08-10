@@ -5,17 +5,17 @@
   }
 
   &__low-beam {
+    background-position: -19px 0;
     border-radius: 2px;
     height: $light-dims;
     width: $light-dims;
-    background-position: -19px 0;
     &::after {
       content: "";
-      display: block;
       border-radius: 50%;
+      box-shadow: 0 0 10px 10px $low-beam, 9px 33px 10px 1px $low-beam;
+      display: block;
       height: $light-dims;
       width: $light-dims;
-      box-shadow: 0 0 10px 10px $low-beam, 9px 33px 10px 1px $low-beam;
     }
     &--right {
       &::after {
@@ -25,112 +25,112 @@
 
     &-container {
       display: flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 3.85rem;
-      left: 1.84rem;
-      width: 7.2rem;
       height: 19px;
+      justify-content: space-between;
+      left: 29.5px;
+      position: absolute;
+      top: 61px;
+      width: 115px;
       z-index: 5;
     }
   }
 
   &__high-beam {
-    height: $light-dims;
-    width: $light-dims;
-    border-radius: 50%;
-    z-index: 15;
     background-position: 0 0;
+    border-radius: 50%;
     box-shadow: 0 0 26px 15px $high-beam--bright, 0 0 6px 1px $high-beam--blue,
       0 0 39px 8px $white, inset 0 0 14px -1px $white;
+    height: $light-dims;
+    width: $light-dims;
+    z-index: 15;
     &--upper {
       z-index: 16;
     }
 
     &-container {
-      display: flex;
-      flex-wrap: wrap;
-      position: absolute;
-      height: calc(($light-dims) + 1.2rem);
-      width: calc(($light-dims) + 1.2rem);
-      transform: rotate(45deg);
-      border-radius: 1px;
-      z-index: 10;
       background-image: url("images/high-beam_lamp_support_38x38.png");
       background-position: 0 0;
+      border-radius: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 38.2px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 38.2px;
+      z-index: 10;
 
       &--left {
-        top: 4.1rem;
-        left: 2.44rem;
+        left: 29px;
+        top: 65.6px;
       }
 
       &--right {
-        top: 4.1rem;
-        right: 2.44rem;
+        right: 39px;
+        top: 65.6px;
       }
     }
   }
 
   &__indicator {
+    background-position: 25px 0;
     width: $light-dims;
     z-index: 4;
-    background-position: 25px 0;
 
     &--left {
       transform: scaleX(-1);
     }
     &::after {
-      margin: 0 auto;
       content: "";
-      height: 10px;
-      width: 15px;
       border-radius: 4px;
-      display: block;
       box-shadow: 0 0 5px 3px $indicator--light, 0 0 8px 4px $indicator--orange,
         0 14px 16px 0px $indicator--orange,
         13px 11px 14px 0px $indicator--orange,
         -13px 9px 16px -2px $indicator--orange,
         inset 0 0 6px 3px $indicator--yellow;
+      display: block;
+      height: 10px;
+      margin: 0 auto;
+      width: 15px;
     }
 
     &-container {
-      position: absolute;
+      bottom: 30.4px;
       display: flex;
-      justify-content: space-between;
-      bottom: 1.9rem;
-      left: calc((50% - (7.1rem / 2)) - 1px);
       height: 11px;
-      width: 7.2rem;
+      justify-content: space-between;
+      left: 29.2px;
+      position: absolute;
+      width: 115.2px;
     }
   }
 
   &__interior {
-    position: absolute;
-    left: calc(50% - ($light-dims / 2));
-    top: -(calc($light-dims / 2));
-    height: calc($light-dims / 2);
-    width: $light-dims;
     box-shadow: 0 0 15px 4px $interior;
+    height: 9.5px;
+    left: 42.5px;
+    position: absolute;
+    top: -9.5px;
+    width: $light-dims;
 
     &-container {
-      position: absolute;
-      left: 2.15rem;
-      top: 1.6rem;
-      height: 1.3rem;
-      width: 6.5rem;
+      height: 20.8px;
+      left: 34.4px;
       overflow: hidden;
+      position: absolute;
+      top: 25.6px;
+      width: 104px;
 
       &::after {
         content: "";
-        position: absolute;
-        left: 1.1rem;
-        bottom: -0.1px;
-        display: block;
-        height: 0.25rem;
-        width: 0.7rem;
         background-color: $light-gray;
+        bottom: -0.1px;
         box-shadow: 1.2rem 0 0 0 $light-gray, 2.4rem 0 0 0 $light-gray,
           3.6rem 0 0 0 $light-gray;
+        display: block;
+        height: 4px;
+        left: 17.6px;
+        position: absolute;
+        width: 11.2px;
       }
     }
   }
